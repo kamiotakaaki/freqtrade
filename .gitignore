@@ -1,0 +1,22 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+
+# Virtual env / local env files
+.venv/
+.env
+
+# macOS
+.DS_Store
+
+# Freqtrade sensitive configs (do NOT commit secrets)
+freqtrade/user_data/config.json
+freqtrade/user_data/config_private.json
+freqtrade/user_data/*.private.json
+freqtrade/user_data/*secret*.json
+freqtrade/user_data/*keys*.json
+
+# Local analysis outputs
+pair_analysis_*.json
+backtest_analysis_*.json
+freqtrade/user_data.zip
